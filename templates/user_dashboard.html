@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h1>{{ user.name }}</h1>
+
+<p class="small">
+{{ user.email }}
+</p>
+
+<p class="small">
+Department: {{ user.department or "-" }}
+</p>
+
+<a href="/logout">Logout</a>
+
+{% endblock %}
